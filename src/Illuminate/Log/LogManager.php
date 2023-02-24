@@ -24,7 +24,7 @@ use Throwable;
  */
 class LogManager implements LoggerInterface
 {
-    use ParsesLogConfiguration;
+    use ParsesLogConfiguration, Conditionable;
 
     /**
      * The application instance.
